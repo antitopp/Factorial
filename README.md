@@ -7,16 +7,16 @@ La función factorial se representa con un signo de exclamación “!” detrás
 
 ## Factorial en Kotlin
 ~~~
-fun factorial(n: Int): Int {
-    if (n <= 1) {
-        return 1
-    } else {
+fun factorial(n: Int): Int {          # funcion con un parametro
+    if (n <= 1) {          # estructura condicional
+        return 1           # cuando llega 1 se acaba el programa
+    } else {          # si no llega a 1 se resta el parametro n
         return n * factorial(n - 1)
     }
 }
 
-fun main() {
-    val number = 5
-    println("El factorial de $number es ${factorial(number)}")
+fun main() {          # se ejecuta el codigo
+    val number = 5          # define el valor 5
+    println("El factorial de $number es ${factorial(number)}")         # se invoca o llama al programa
 }
 ~~~
